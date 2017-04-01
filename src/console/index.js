@@ -32,3 +32,15 @@ console.dir(user);
 console.log(user);
 
 console.timeEnd("label");
+
+var user = new Object();
+user.name = "Jennifer";
+user.getName = function() {
+  return this.name;
+};
+user.setName = function(name) {
+  this.name = name;
+};
+console.trace("Trace user");
+
+console.assert(1 === 22,"Raise an exception");
