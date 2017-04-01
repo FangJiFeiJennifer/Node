@@ -1,0 +1,20 @@
+{
+  "name": "node-study-demo",
+  "version": "1.0.0",
+  "description": "node js study demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FangJiFeiJennifer/Node.git"
+  },
+  "author": "Fang, Jifei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FangJiFeiJennifer/Node/issues"
+  },
+  "homepage": "https://github.com/FangJiFeiJennifer/Node#readme",
+  "dependencies": {}
+}
