@@ -30,3 +30,12 @@ var test = setTimeout(testFunction,50,"Just test setInterval function.");
 test.unref();
 test.ref();
 ```
+*****
+### node.js中所有的文件都是一个模块，require.main可以检测一个模块是否为主模块（在命令窗口中通过node XXX.js直接运行的文件。）
+```javascript
+if(module === require.main) {
+  console.log("This is the main module in testModule.js");
+}
+```
+>node.js模块在加载的时候会运行里面的每一行代码，在首次加载后将会缓存在缓冲区，这就意味着对模块的多次引用得到的都是同一个模块。
+这也意味着多次引用，不会引起模块内的代码多次执行。
